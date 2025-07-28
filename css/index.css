@@ -1,0 +1,174 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  background: #131517;
+  font-family: "Pretendard-Regular", Arial, Helvetica, sans-serif;
+}
+
+.diagonal-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.diagonal {
+  position: absolute;
+  width: 150vw;
+  height: 100vh;
+  top: 0;
+  left: -25vw;
+  transform-origin: center;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.diagonal video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(60%);
+}
+
+.diagonal.one {
+  transform: skewY(0deg);
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 0% 100%);
+}
+
+.diagonal.two {
+  transform: skewY(0deg);
+  clip-path: polygon(-5% 100%, 100% 0, 100% 100%, 0% 100%);
+}
+
+.button-overlay {
+  position: absolute;
+  z-index: 2;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-delay: 0.5s;
+}
+
+.button-overlay.top {
+  top: 23%;
+  left: 20%;
+  animation-name: slideInLeft;
+}
+
+.button-overlay.bottom {
+  bottom: 23%;
+  right: 20%;
+  animation-name: slideInRight;
+}
+
+@keyframes slideInLeft {
+  from {
+    left: -200px;
+    opacity: 0;
+  }
+  to {
+    left: 20%;
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    right: -200px;
+    opacity: 0;
+  }
+  to {
+    right: 20%;
+    opacity: 1;
+  }
+}
+
+/* a.btn 스타일 */
+.btn {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 5.8rem;
+  color: #f5f7fb;
+  text-decoration: none;
+  background-color: transparent;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+  backdrop-filter: blur(4px);
+  white-space: nowrap;
+  border-radius: 4px;
+}
+
+.btn1:hover {
+  color: #029cf5;
+}
+.btn2:hover {
+  color: #ffba30;
+}
+@media screen and (max-width: 768px) {
+  .btn {
+    padding: 12px 24px;
+    font-size: 1rem;
+  }
+
+  .button-overlay.top {
+    top: 25%;
+    left: 20%;
+    animation-name: slideInLeftMobile;
+  }
+
+  .button-overlay.bottom {
+    bottom: 25%;
+    right: 20%;
+    animation-name: slideInRightMobile;
+  }
+
+  @keyframes slideInLeftMobile {
+    from {
+      left: -200px;
+      opacity: 0;
+    }
+    to {
+      left: 20%;
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideInRightMobile {
+    from {
+      right: -200px;
+      opacity: 0;
+    }
+    to {
+      right: 20%;
+      opacity: 1;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  .button-overlay.top {
+    top: 22%;
+  }
+
+  .button-overlay.bottom {
+    bottom: 22%;
+  }
+}

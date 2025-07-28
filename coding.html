@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>HTML Works</title>
+    <meta name="viewport" content="width=device-width" />
+    <script src="js/aos.js" defer></script> 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+    <script src="js/event.js" defer></script>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/aos.css">
+    
+
+  </head>
+  <body>
+    <!-- 레이어 팝업 -->
+<div class="popup_gide" style="display: none;">
+  <div class="popup_content">
+    <img src="" alt="팝업 이미지" class="popup_img" />
+    <button id="go_site_btn">사이트로 이동</button>
+    <button id="close_btn">닫기</button>
+  </div>
+</div>
+
+<button onclick="topFunction()" id="topBtn" ></button>
+    <header class="grid">
+      <h1><a href="intro.html">WebDesign Portfolio</a></h1>
+      <nav class="gnb">
+        <h2 class="blind">주메뉴</h2>
+        <ul class="grid">
+          <li><a href="coding.html" class="tex_y">HTML</a></li>
+          <li><a href="design.html">Design</a></li>
+          <li><a href="contact.html">Contact&nbsp;Me</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="visual_box">
+      <div class="visual_img">
+        <img src="img/coding_top.jpg" alt="" />
+        <h2>-  “감성 코딩의 희귀종, 바로 나."</h2>
+        <p>
+          HTML/CSS부터 UI/UX 디자인까지, 다양한 프로젝트를<br />
+          통해 보여드리는 작품집입니다.
+        </p>
+        <div class="visual_btn">
+          <span class="top_btn btn_style_01"><a href="design.html">Design Works</a></span>
+          <span class="top_btn btn_style_01"><a href="contact.html">Contact Me</a></span>
+        </div>
+      </div>
+    </div>
+    
+       <div id="transcroller-body" class="aos-all">
+          <div class="top_bg">
+            <section class="section">
+              <h2>저에 대해</h2>
+              <p>
+                5년 이상 웹 디자인 경험을 바탕으로 사용자 중심의 디자인을 추구
+                합니다.
+              </p>
+            <div class="inner skill_co grid"> 
+              <div class="item item_bg" data-aos="fade-right">
+                <div class="item_text">
+                <span class="icon">
+                 
+<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960"  ><path d="M480-80q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 32.5-156t88-127Q256-817 330-848.5T488-880q80 0 151 27.5t124.5 76q53.5 48.5 85 115T880-518q0 115-70 176.5T640-280h-74q-9 0-12.5 5t-3.5 11q0 12 15 34.5t15 51.5q0 50-27.5 74T480-80Zm0-400Zm-220 40q26 0 43-17t17-43q0-26-17-43t-43-17q-26 0-43 17t-17 43q0 26 17 43t43 17Zm120-160q26 0 43-17t17-43q0-26-17-43t-43-17q-26 0-43 17t-17 43q0 26 17 43t43 17Zm200 0q26 0 43-17t17-43q0-26-17-43t-43-17q-26 0-43 17t-17 43q0 26 17 43t43 17Zm120 160q26 0 43-17t17-43q0-26-17-43t-43-17q-26 0-43 17t-17 43q0 26 17 43t43 17ZM480-160q9 0 14.5-5t5.5-13q0-14-15-33t-15-57q0-42 29-67t71-25h70q66 0 113-38.5T800-518q0-121-92.5-201.5T488-800q-136 0-232 93t-96 227q0 133 93.5 226.5T480-160Z"/></svg>
+                </span>
+                <h3>UI/UX 디자인</h3>
+                <p>사용자 경험을 최우선으로 하는 직관적이고 아름다운 인터페이스를 디자인 합니다. 
+                </p>
+                </div>
+              </div>
+
+              <div class="item" data-aos="zoom-out-down">
+                 <div class="item_text">
+                  <span class="icon">
+                    
+<svg xmlns="http://www.w3.org/2000/svg"viewBox="0 -960 960 960"><path d="M320-240 80-480l240-240 57 57-184 184 183 183-56 56Zm320 0-57-57 184-184-183-183 56-56 240 240-240 240Z"/></svg>
+                  </span>
+                  <h3>프론트엔드 개발</h3>
+                  <p>HTML, CSS, JavaScript를 활용하여 실제 웹사이트로 구현합니다</p>
+                </div>
+              </div>
+
+              <div class="item" data-aos="fade-left">
+                 <div class="item_text">
+                  <span class="icon">
+                    
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"  ><path d="M280-40q-33 0-56.5-23.5T200-120v-720q0-33 23.5-56.5T280-920h400q33 0 56.5 23.5T760-840v124q18 7 29 22t11 34v80q0 19-11 34t-29 22v404q0 33-23.5 56.5T680-40H280Zm0-80h400v-720H280v720Zm0 0v-720 720Zm200-600q17 0 28.5-11.5T520-760q0-17-11.5-28.5T480-800q-17 0-28.5 11.5T440-760q0 17 11.5 28.5T480-720Z"/></svg>
+                  </span>
+                  <h3>반응형 디자인</h3>
+                  <p>모든 디바이스에서 작동하는 반응형 웹 사이트를 제작합니다.</p>
+                </div>
+              </div>
+            </div>  <!--//skill_co-->
+            </section>
+          </div>
+            <main>
+          <section class="main_title">
+            <h2 class="code_title">HTML Works</h2>
+            <p>다양한 웹 개발 프로젝트를 확인해보세요.</p>
+                <div class="inner list_co grid"> 
+                  
+
+                                    <div class="item" data-aos="fade-down-right">
+                     <a href="https://hecia.dothome.co.kr/portfolio/project/kbs_sports/index.html" target="_blank">
+                    <div class="list_img"><img src="img/kbs_sports.jpg" alt="KBS스포츠 월드"></div>
+                    <div class="list_text">
+                      <h3>KBS스포츠 월드</h3>
+                    <p>불필요한 디자인은 지우고 사용자 편의에 맞게 반응형으로
+                      재구현 
+                    </p>
+                    <span>#html</span><span>#css</span><span>#반응형</span>
+                    <p class="view_icon"><a href="javascript:void(0)">라이브</a></p>
+                    </div>
+                     <span class="summary">리뉴얼</span>
+                     </a>
+                  </div>
+                  <!-- 첫 번째 아이템 (Fit Loop) -->
+                  <div class="item item_gide" data-aos="zoom-in-down" data-img="image/fitloop_gide.jpg" data-link="https://hecia.dothome.co.kr/portfolio/project/FitLoop/index.html">
+                    <div class="list_img"><img src="img/fitloop.jpg" alt="Fit Loop"></div>
+                    <div class="list_text">
+                      <h3>Fit Loop</h3>
+                      <p>Fitloop(핏루프)는 폴댄서들의 일상과 경제적인 소비를 연결하는 실용적인 서브 플랫폼입니다.</p>
+                      <span>#html</span><span>#css</span><span>#모바일 앱</span>
+                      <p class="view_icon">자세히보기</p>
+                    </div>
+                    <span class="summary">개인 프로젝트</span>
+                  </div>
+
+                <!-- 두 번째 아이템 (나비펫) -->
+                <div class="item item_gide" data-aos="fade-down-left" data-img="image/navi_gide.jpg" data-link="https://hecia.dothome.co.kr/portfolio/project/NaviPet/index.html">
+                  <div class="list_img"><img src="img/navipet.jpg" alt="나비펫"></div>
+                  <div class="list_text">
+                    <h3>NaviPet</h3>
+                    <p>NaviPet(나비펫)은 반려동물 보호자들이 가까운 동물병원을 쉽고 빠르게 찾을 수 있도록 도와주는 모바일 앱입니다.</p>
+                    <span>#html</span><span>#css</span><span>#모바일 앱</span>
+                    <p class="view_icon">자세히보기</p>
+                  </div>
+                  <span class="summary">개인 프로젝트</span>
+                </div>
+                  <div class="item" data-aos="flip-up">
+                     <a href="https://hecia.dothome.co.kr/portfolio/project/shinsLB/index.html" target="_blank">
+                    <div class="list_img"><img src="img/shinsLB.jpg" alt="신세계 L&B"></div>
+                    <div class="list_text">
+                      <h3>신세계 L&B</h3>
+                    <p>메인 페이지 슬라이드 오류를 수정 및 개선해서 클론 코딩을 하였습니다.
+                    </p>
+                    <span>#html</span><span>#css</span><span>#jQuery</span>
+                    <p class="view_icon">라이브</p>
+                    </div>
+                    <span class="summary">클론 사이트</span>
+                     </a>
+                    </div>
+                   
+             
+                  <div class="item" data-aos="zoom-out-down">
+                    <a href="https://hecia.dothome.co.kr/portfolio/project/mpyc/index.html" target="_blank">
+                    <div class="list_img"><img src="img/mpyc.jpg" alt="대관령 음악회"></div>
+                      <div class="list_text">
+                      <h3>대관령 음악회</h3>
+                      <p>HTML, CSS, JavaScript를 활용하여 마우스 오버 이펙트 효과를 구현</p>
+                      <span>#html</span><span>#css</span><span>#hover</span>
+                    <p class="view_icon">라이브</p>
+                    </div>
+                     <span class="summary">클론 사이트</span>
+                     </a>
+                  </div>
+                  <div class="item" data-aos="flip-down">
+                   <a href="https://hecia.dothome.co.kr/portfolio/project/chzzk/index.html" target="_blank">
+                    <div class="list_img"><img src="img/chzzk.jpg" alt="네이버 치지직"></div>
+                      <div class="list_text">
+                      <h3>네이버 치지직</h3>
+                      <p>그리드와 css변수를 이용하여 사이즈 조절과 라이트모드, 다크모드 기능 구현</p>
+                      <span>#html</span><span>#css</span><span>#모드전환</span>
+                      <p class="view_icon">라이브</p>
+                    </div>
+                     <span class="summary">클론 사이트</span>
+                     </a>
+                  </div>
+
+
+              </div>  <!--//list_co-->
+          </section>
+          </div><!--#transcroller-body-->
+             </div>
+      </main>
+      <footer>
+        <h3>JOYURI - WebDesign Portfolio</h3>
+          <address>
+          <span>hecia@naver.com</span>
+        </address>    
+        <small>© 2025 웹디자인 포트폴리오. All rights reserved</small>
+      </footer>
+
+
+
+
+    <script>
+      AOS.init({
+        easing: "ease-in-out-sine",
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>MSG 좀 친 포트폴리오</title>
+    <link rel="stylesheet" href="https://use.typekit.net/xlj8lcy.css" />
+    <link rel="stylesheet" href="css/style_intro.css" />
+  </head>
+  <body>
+    <!-- partial:index.partial.html -->
+    <svg
+      id="demo"
+      xmlns="http://www.w3.org/2000/svg"
+      width="1000"
+      height="1000"
+      viewBox="0 0 100 100"
+    >
+      <defs>
+        <clipPath id="theClipPath">
+          <rect id="theSquare" x="0" y="50" width="200" height="0" fill="red" />
+        </clipPath>
+      </defs>
+      <line
+        id="target1"
+        x1="0"
+        y1="50"
+        x2="0"
+        y2="50"
+        stroke-width="1"
+        stroke="#fff"
+      />
+      <line
+        id="target2"
+        x1="0"
+        y1="50"
+        x2="0"
+        y2="50"
+        stroke-width="1"
+        stroke="#fff"
+      />
+
+      <g id="clipPathReveal" clip-path="url(#theClipPath)">
+        <text
+          transform="translate(50 53)"
+          text-anchor="middle"
+          font-size="7"
+          fill="#029cf5"
+        >
+          “픽셀 하나에도 MSG 좀 쳤습니다”
+        </text>
+      </g>
+
+      <text x="50" y="30" text-anchor="middle" font-size="10" fill="#ffba30">
+        JOYURI
+      </text>
+    </svg>
+
+    <!-- partial -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.5/gsap.min.js"></script>
+    <script src="js/intro_script.js"></script>
+    <script>
+      // 3초 후 index.html로 이동
+      setTimeout(() => {
+        window.location.href = "intro.html";
+      }, 3500);
+    </script>
+  </body>
+</html>
